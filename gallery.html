@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行相册 - 行者无疆</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 页面头部 -->
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>旅行相册</h1>
+        <p>来自世界各地旅客的精彩瞬间，每一张照片都是一段难忘的旅程</p>
+    </div>
+</section>
+
+<!-- 筛选栏 -->
+<section class="filter-section">
+    <div class="filter-bar">
+        <button class="gallery-filter-btn active" data-category="all">全部</button>
+        <button class="gallery-filter-btn" data-category="nature">自然风光</button>
+        <button class="gallery-filter-btn" data-category="city">城市人文</button>
+        <button class="gallery-filter-btn" data-category="ocean">海岛海洋</button>
+        <button class="gallery-filter-btn" data-category="snow">雪山极地</button>
+    </div>
+</section>
+
+<!-- 相册网格 -->
+<section class="gallery-page">
+    <div class="gallery-grid">
+        <div class="gallery-item gallery-item-tall animate-on-scroll" data-category="nature" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80')">
+            <div class="gallery-overlay"><span>🌅 日落湖畔 · 新西兰</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="snow" style="background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=600&q=80')">
+            <div class="gallery-overlay"><span>🏔️ 雪山云海 · 冰岛</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="city" style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?w=600&q=80')">
+            <div class="gallery-overlay"><span>🏛️ 古城遗迹 · 希腊</span></div>
+        </div>
+        <div class="gallery-item gallery-item-wide animate-on-scroll" data-category="nature" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80')">
+            <div class="gallery-overlay"><span>🏞️ 山间秘境 · 挪威</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="ocean" style="background-image: url('https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80')">
+            <div class="gallery-overlay"><span>🌊 碧海蓝天 · 希腊</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="city" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80')">
+            <div class="gallery-overlay"><span>🗼 铁塔夜景 · 巴黎</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="ocean" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80')">
+            <div class="gallery-overlay"><span>🏝️ 水上屋 · 马尔代夫</span></div>
+        </div>
+        <div class="gallery-item gallery-item-tall animate-on-scroll" data-category="snow" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80')">
+            <div class="gallery-overlay"><span>⛰️ 阿尔卑斯 · 瑞士</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="nature" style="background-image: url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80')">
+            <div class="gallery-overlay"><span>🐠 珊瑚海底 · 大堡礁</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="city" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80')">
+            <div class="gallery-overlay"><span>🌃 东京夜色 · 日本</span></div>
+        </div>
+        <div class="gallery-item gallery-item-wide animate-on-scroll" data-category="ocean" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80')">
+            <div class="gallery-overlay"><span>🏖️ 热带海滩 · 普吉岛</span></div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-category="nature" style="background-image: url('https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=600&q=80')">
+            <div class="gallery-overlay"><span>🌄 沙漠日出 · 撒哈拉</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+</div>
+
+<!-- 订阅区 -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <div class="newsletter-text">
+            <h2>订阅旅行资讯</h2>
+            <p>第一时间获取独家优惠、旅行攻略和目的地推荐</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="请输入您的邮箱地址" required>
+            <button type="submit">立即订阅</button>
+        </form>
+        <p class="newsletter-note">我们尊重您的隐私，绝不会发送垃圾邮件</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

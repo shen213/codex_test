@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行者无疆 - 探索世界之美</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 英雄区 -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="title-line">探索世界的</span>
+            <span class="title-line highlight">每一处美好</span>
+        </h1>
+        <p class="hero-subtitle">人生至少要有两次冲动，一次为奋不顾身的爱情，一次为说走就走的旅行</p>
+        <div class="hero-search">
+            <div class="search-box">
+                <input type="text" placeholder="你想去哪里？" id="searchInput">
+                <button class="search-btn">搜索旅行</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">精选目的地</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">满意旅客</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">专业导游</span>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>向下滚动探索更多</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- 快捷入口 -->
+<section class="quick-links">
+    <div class="section-header">
+        <h2 class="section-title">开启你的旅程</h2>
+        <p class="section-subtitle">选择你感兴趣的内容，开始探索</p>
+        <div class="title-divider"></div>
+    </div>
+    <div class="quick-grid">
+        <a href="destinations.html" class="quick-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80')">
+            <div class="quick-overlay"></div>
+            <div class="quick-info">
+                <span class="quick-icon">🌍</span>
+                <h3>热门目的地</h3>
+                <p>探索全球精选旅行目的地</p>
+            </div>
+        </a>
+        <a href="features.html" class="quick-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80')">
+            <div class="quick-overlay"></div>
+            <div class="quick-info">
+                <span class="quick-icon">🛡️</span>
+                <h3>为什么选择我们</h3>
+                <p>了解我们的专业服务</p>
+            </div>
+        </a>
+        <a href="gallery.html" class="quick-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80')">
+            <div class="quick-overlay"></div>
+            <div class="quick-info">
+                <span class="quick-icon">📸</span>
+                <h3>旅行相册</h3>
+                <p>来自世界各地的精彩瞬间</p>
+            </div>
+        </a>
+        <a href="reviews.html" class="quick-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=600&q=80')">
+            <div class="quick-overlay"></div>
+            <div class="quick-info">
+                <span class="quick-icon">⭐</span>
+                <h3>旅客评价</h3>
+                <p>听听他们的真实故事</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- 精选目的地 -->
+<section class="destinations-preview">
+    <div class="section-header">
+        <h2 class="section-title">精选目的地</h2>
+        <p class="section-subtitle">本季最受欢迎的旅行目的地</p>
+        <div class="title-divider"></div>
+    </div>
+    <div class="dest-grid">
+        <div class="dest-card dest-card-large animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">热门</span>
+                <h3>瑞士 · 阿尔卑斯山</h3>
+                <p>在欧洲之巅感受大自然的壮丽与宁静</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.9</span>
+                    <span>📍 欧洲</span>
+                    <span class="dest-price">¥18,800起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">推荐</span>
+                <h3>日本 · 东京</h3>
+                <p>传统与现代交融的霓虹之都</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.8</span>
+                    <span>📍 亚洲</span>
+                    <span class="dest-price">¥6,500起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">特价</span>
+                <h3>马尔代夫</h3>
+                <p>印度洋上的珍珠，人间天堂</p>
+                <div class="dest-meta">
+                    <span>⭐ 5.0</span>
+                    <span>📍 南亚</span>
+                    <span class="dest-price">¥12,000起</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-more">
+        <a href="destinations.html" class="btn-primary">查看全部目的地 →</a>
+    </div>
+</section>
+
+<!-- 为什么选择我们（简要） -->
+<section class="features-preview">
+    <div class="section-header">
+        <h2 class="section-title">为什么选择我们</h2>
+        <p class="section-subtitle">六大理由，让您安心出行</p>
+        <div class="title-divider"></div>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">🌍</div>
+            <h3>全球覆盖</h3>
+            <p>覆盖全球200+国家和地区，无论是热门景点还是小众秘境。</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">💰</div>
+            <h3>超值价格</h3>
+            <p>与全球供应商深度合作，提供最具竞争力的价格。</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">🛡️</div>
+            <h3>安全保障</h3>
+            <p>全程旅行保险覆盖，24小时紧急支援，出行无忧。</p>
+        </div>
+    </div>
+    <div class="section-more">
+        <a href="features.html" class="btn-primary">了解更多 →</a>
+    </div>
+</section>
+
+<!-- 旅客好评 -->
+<section class="reviews-preview">
+    <div class="section-header">
+        <h2 class="section-title">旅客好评</h2>
+        <p class="section-subtitle">超过10000位旅客的信赖之选</p>
+        <div class="title-divider"></div>
+    </div>
+    <div class="reviews-grid">
+        <div class="review-card animate-on-scroll">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"第一次带家人出国旅行，行者无疆的团队非常专业，从签证到行程安排都很周到。孩子在迪士尼玩得特别开心！"</p>
+            <div class="review-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">王</div>
+                <div class="author-info">
+                    <h4>王女士</h4>
+                    <span>东京家庭游 · 2025年12月</span>
+                </div>
+            </div>
+        </div>
+        <div class="review-card animate-on-scroll">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"蜜月旅行选了马尔代夫，从接机到入住全程无缝衔接。水上别墅太美了，深潜教练也很耐心。完美！"</p>
+            <div class="review-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">李</div>
+                <div class="author-info">
+                    <h4>李先生 & 张女士</h4>
+                    <span>马尔代夫蜜月 · 2025年11月</span>
+                </div>
+            </div>
+        </div>
+        <div class="review-card animate-on-scroll">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"一个人去瑞士徒步，向导非常专业又有趣。少女峰的景色震撼到说不出话，下次还找行者无疆！"</p>
+            <div class="review-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">陈</div>
+                <div class="author-info">
+                    <h4>陈同学</h4>
+                    <span>瑞士徒步 · 2025年10月</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-more">
+        <a href="reviews.html" class="btn-primary">查看更多评价 →</a>
+    </div>
+</section>
+
+<!-- 订阅区 -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <div class="newsletter-text">
+            <h2>订阅旅行资讯</h2>
+            <p>第一时间获取独家优惠、旅行攻略和目的地推荐</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="请输入您的邮箱地址" required>
+            <button type="submit">立即订阅</button>
+        </form>
+        <p class="newsletter-note">我们尊重您的隐私，绝不会发送垃圾邮件</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

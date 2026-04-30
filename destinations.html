@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门目的地 - 行者无疆</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 页面头部 -->
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>热门目的地</h1>
+        <p>发现世界上最令人惊叹的旅行目的地，从雪山到海岛，从古城到都市</p>
+    </div>
+</section>
+
+<!-- 筛选栏 -->
+<section class="filter-section">
+    <div class="filter-bar">
+        <button class="filter-btn active" data-region="all">全部</button>
+        <button class="filter-btn" data-region="asia">亚洲</button>
+        <button class="filter-btn" data-region="europe">欧洲</button>
+        <button class="filter-btn" data-region="oceania">大洋洲</button>
+        <button class="filter-btn" data-region="americas">美洲</button>
+        <button class="filter-btn" data-region="africa">非洲</button>
+    </div>
+</section>
+
+<!-- 目的地列表 -->
+<section class="destinations-page">
+    <div class="dest-grid">
+        <div class="dest-card dest-card-large animate-on-scroll" data-region="europe" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">热门</span>
+                <h3>瑞士 · 阿尔卑斯山</h3>
+                <p>在欧洲之巅感受大自然的壮丽与宁静，少女峰的雪景令人窒息</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.9</span>
+                    <span>📍 欧洲</span>
+                    <span class="dest-price">¥18,800起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="asia" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">推荐</span>
+                <h3>日本 · 东京</h3>
+                <p>传统与现代交融的霓虹之都，浅草寺的钟声与涩谷的人潮</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.8</span>
+                    <span>📍 亚洲</span>
+                    <span class="dest-price">¥6,500起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="asia" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">特价</span>
+                <h3>马尔代夫</h3>
+                <p>印度洋上的珍珠，人间天堂，水上别墅与星空为伴</p>
+                <div class="dest-meta">
+                    <span>⭐ 5.0</span>
+                    <span>📍 南亚</span>
+                    <span class="dest-price">¥12,000起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="europe" style="background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">浪漫</span>
+                <h3>法国 · 巴黎</h3>
+                <p>在塞纳河畔感受浪漫之都的魅力，埃菲尔铁塔下的誓言</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.7</span>
+                    <span>📍 欧洲</span>
+                    <span class="dest-price">¥15,200起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="asia" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">海岛</span>
+                <h3>泰国 · 普吉岛</h3>
+                <p>碧海蓝天，热带风情的完美假期，夜市与海滩的双重享受</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.6</span>
+                    <span>📍 东南亚</span>
+                    <span class="dest-price">¥4,800起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="oceania" style="background-image: url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">自然</span>
+                <h3>澳大利亚 · 大堡礁</h3>
+                <p>潜入海底世界，探索地球上最大的珊瑚礁群</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.9</span>
+                    <span>📍 大洋洲</span>
+                    <span class="dest-price">¥22,000起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="asia" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">蜜月</span>
+                <h3>印尼 · 巴厘岛</h3>
+                <p>千庙之岛，乌布梯田与海神庙的日落令人沉醉</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.8</span>
+                    <span>📍 东南亚</span>
+                    <span class="dest-price">¥5,800起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="americas" style="background-image: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">浪漫</span>
+                <h3>美国 · 夏威夷</h3>
+                <p>太平洋上的度假天堂，火山、冲浪与草裙舞</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.7</span>
+                    <span>📍 北美</span>
+                    <span class="dest-price">¥16,500起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="europe" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">文化</span>
+                <h3>希腊 · 圣托里尼</h3>
+                <p>蓝白相间的建筑群，爱琴海上最浪漫的日落</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.9</span>
+                    <span>📍 欧洲</span>
+                    <span class="dest-price">¥14,500起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="europe" style="background-image: url('https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">极光</span>
+                <h3>冰岛</h3>
+                <p>冰与火之国，极光、温泉与黑沙滩的奇幻之旅</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.8</span>
+                    <span>📍 欧洲</span>
+                    <span class="dest-price">¥25,000起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="africa" style="background-image: url('https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">探险</span>
+                <h3>埃及 · 金字塔</h3>
+                <p>穿越千年时光，探寻法老的秘密与尼罗河的传奇</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.6</span>
+                    <span>📍 非洲</span>
+                    <span class="dest-price">¥11,000起</span>
+                </div>
+            </div>
+        </div>
+        <div class="dest-card animate-on-scroll" data-region="asia" style="background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80')">
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+                <span class="dest-tag">文化</span>
+                <h3>印度 · 泰姬陵</h3>
+                <p>永恒之泪，莫卧儿帝国最伟大的爱情纪念碑</p>
+                <div class="dest-meta">
+                    <span>⭐ 4.5</span>
+                    <span>📍 南亚</span>
+                    <span class="dest-price">¥8,200起</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 订阅区 -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <div class="newsletter-text">
+            <h2>订阅旅行资讯</h2>
+            <p>第一时间获取独家优惠、旅行攻略和目的地推荐</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="请输入您的邮箱地址" required>
+            <button type="submit">立即订阅</button>
+        </form>
+        <p class="newsletter-note">我们尊重您的隐私，绝不会发送垃圾邮件</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

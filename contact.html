@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 行者无疆</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 页面头部 -->
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>联系我们</h1>
+        <p>无论您有任何旅行问题或需求，我们都随时为您服务</p>
+    </div>
+</section>
+
+<!-- 联系方式卡片 -->
+<section class="contact-cards-section">
+    <div class="contact-cards-grid">
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">📞</div>
+            <h3>电话咨询</h3>
+            <p>400-888-9999</p>
+            <span>周一至周日 9:00-21:00</span>
+        </div>
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">📧</div>
+            <h3>邮箱咨询</h3>
+            <p>hello@travel.com</p>
+            <span>24小时内回复</span>
+        </div>
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">📍</div>
+            <h3>到店咨询</h3>
+            <p>北京市朝阳区建国路88号</p>
+            <span>行者无疆旅行体验中心</span>
+        </div>
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">💬</div>
+            <h3>在线咨询</h3>
+            <p>微信公众号：行者无疆</p>
+            <span>扫码关注，实时沟通</span>
+        </div>
+    </div>
+</section>
+
+<!-- 联系表单 + 地图 -->
+<section class="contact-form-section">
+    <div class="contact-layout">
+        <div class="contact-form-wrapper">
+            <h2>发送咨询</h2>
+            <p>填写以下表单，我们的旅行顾问会尽快与您联系</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" placeholder="请输入您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话 *</label>
+                        <input type="tel" id="phone" placeholder="请输入您的电话" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" placeholder="请输入您的邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="destination">感兴趣的目的地</label>
+                    <select id="destination">
+                        <option value="">请选择</option>
+                        <option>日本</option>
+                        <option>欧洲</option>
+                        <option>马尔代夫</option>
+                        <option>东南亚</option>
+                        <option>澳大利亚</option>
+                        <option>美洲</option>
+                        <option>非洲</option>
+                        <option>其他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">咨询内容 *</label>
+                    <textarea id="message" rows="5" placeholder="请描述您的旅行需求，如出行时间、人数、预算等" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">提交咨询</button>
+            </form>
+        </div>
+        <div class="contact-map-wrapper">
+            <div class="map-placeholder">
+                <div class="map-inner">
+                    <span class="map-icon">🗺️</span>
+                    <h3>行者无疆旅行体验中心</h3>
+                    <p>北京市朝阳区建国路88号</p>
+                    <p>距国贸地铁站C口步行5分钟</p>
+                    <div class="map-coords">
+                        <span>🕐 营业时间：周一至周日 9:00-21:00</span>
+                        <span>🅿️ 提供免费停车位</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="section-header">
+        <h2 class="section-title">常见问题</h2>
+        <p class="section-subtitle">快速找到您想了解的答案</p>
+        <div class="title-divider"></div>
+    </div>
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>如何预订旅行方案？</span>
+                <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+                <p>您可以通过电话（400-888-9999）、在线表单或微信公众号联系我们。我们的旅行顾问会在24小时内与您沟通需求，为您定制专属方案。确认方案后，支付定金即可完成预订。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>签证办理需要多长时间？</span>
+                <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+                <p>不同国家的签证办理时间不同。一般来说，东南亚国家需要3-5个工作日，日本需要5-7个工作日，欧洲申根签证需要7-15个工作日。建议您至少提前1个月联系我们办理签证。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>旅行途中遇到问题怎么办？</span>
+                <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+                <p>我们提供24小时紧急支援热线。旅途中遇到任何问题，您可以随时联系您的专属客服或拨打紧急热线。我们与国际SOS合作，在全球范围内提供紧急救援服务。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>可以取消或更改行程吗？</span>
+                <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+                <p>根据不同的旅行方案和取消时间，退改政策有所不同。一般来说，出发前30天取消可全额退款，15-30天取消收取10%手续费，7-15天收取30%，7天内取消收取50%。具体以合同为准。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>是否提供旅行保险？</span>
+                <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+                <p>是的，我们的所有旅行方案都包含基础旅行保险，涵盖航班延误、行李丢失、医疗救援等。您也可以选择升级为全面保障计划，增加取消保障、高风险运动保障等。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
