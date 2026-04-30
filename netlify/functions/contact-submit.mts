@@ -16,7 +16,13 @@ function getDatabaseUrl() {
     Netlify?: { env: { get(key: string): string | undefined } };
   }).Netlify?.env;
 
-  return env?.get("SUPABASE_DB_URL") ?? env?.get("DATABASE_URL") ?? "";
+  return (
+    env?.get("SUPABASE_DB_URL") ??
+    env?.get("DATABASE_URL") ??
+    process.env.SUPABASE_DB_URL ??
+    process.env.DATABASE_URL ??
+    ""
+  );
 }
 
 function getPool() {
