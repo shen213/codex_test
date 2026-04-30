@@ -1,0 +1,10 @@
+{
+  "name": "travel-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@netlify/functions": "^2.8.0",
+    "pg": "^8.13.1"
+  }
+}

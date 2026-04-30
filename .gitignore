@@ -5,6 +5,15 @@ Thumbs.db
 # Editor folders
 .vscode/
 .idea/
+.netlify/
+
+# Node dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Logs
 *.log

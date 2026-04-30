@@ -49,3 +49,11 @@ travel-website/
 ## 图片来源
 
 网站图片均来自 [Unsplash](https://unsplash.com)，通过 CDN 加载。
+
+## 联系表单后端
+
+- 表单提交路径：`/api/contact`
+- 后端形式：Netlify Serverless Function
+- 数据写入：通过 Supabase PostgreSQL Transaction Pooler 写入 `public.contact_submissions`
+- 需要的环境变量：`SUPABASE_DB_URL` 或 `DATABASE_URL`
+- 本地开发可参考 `.env.example`，实际密码不要提交到仓库

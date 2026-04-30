@@ -418,10 +418,56 @@ function initReviewsPage() {
 function initContactPage() {
     const form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', (e) => {
+        const submitBtn = form.querySelector('.btn-submit');
+
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            showToast('提交成功！我们会尽快与您联系。');
-            form.reset();
+
+            const originalText = submitBtn?.textContent || '提交咨询';
+            const payload = {
+                name: document.getElementById('name')?.value.trim() || '',
+                phone: document.getElementById('phone')?.value.trim() || '',
+                email: document.getElementById('email')?.value.trim() || '',
+                destination: document.getElementById('destination')?.value.trim() || '',
+                message: document.getElementById('message')?.value.trim() || '',
+            };
+
+            if (!payload.name || !payload.phone || !payload.message) {
+                showToast('请补全必填字段后再提交咨询。');
+                return;
+            }
+
+            try {
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '提交中...';
+                }
+
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+
+                const data = await response.json().catch(() => ({}));
+
+                if (!response.ok) {
+                    throw new Error(data.error || '提交失败');
+                }
+
+                showToast('提交成功！我们会尽快与您联系。');
+                form.reset();
+            } catch (error) {
+                console.error('Contact form submit failed:', error);
+                showToast(error instanceof Error ? error.message : '提交失败，请稍后再试。');
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }
+            }
         });
     }
 
